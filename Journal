@@ -1,0 +1,19 @@
+Jul 24, 2023
+There is a lot of value in not creating things in a way that it is like a replica of sendy or something. Let's focus on
+creating something that benefits our business.  This will be to the extent possible a node module that I can re-use that will
+allow me to set up the features that I need to send email broadcasts easily. One of those will the logic involved in
+synchrnoizing the firestore database with the email list.
+
+Looks like the user interface to delete the user is something that is to be built by me. If so then what am I putting in here?
+May be the logic that will deliver the email? The UI that will allow me to define it? No point in those detours. I will jsut use
+plain old node.js scripts for this. Let's see what comes out of that.
+
+
+00001: Creating a subscription form
+
+How on earth am I going to create a subscription form? A form is only going ot have a set of a name and email address
+field. May be a few more fields. Those fields should be a variable in the newsletter's definition. The users can subscribe
+to the firebase and I need their email address from firebase. How do I access that?
+
+Tasks:
+1. Just create the fields in firebase. Don't create a script that creates those. We are NOT creating a commercial product
